@@ -39,6 +39,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../assets/background.jpg);
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 0.1em;
 }
 
 .images {
@@ -55,13 +59,15 @@ main {
     display: flex;
     flex-direction: column;
     align-items: space-between;
+    padding: 10px;
 }
 
 .slogan {
 }
 
 .images img {
-    width: 200px;
+    width: 300px;
+    padding: 10px;
 }
 
 .selections img {
@@ -75,6 +81,8 @@ main {
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .counter {

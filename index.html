@@ -15,6 +15,12 @@
 
         <!-- fonts -->
         <!-- see https://fonts.google.com/ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+            rel="stylesheet"
+        />
 
         <!-- css -->
         <link rel="stylesheet" href="styles/reset.css" />
@@ -30,13 +36,12 @@
         <main>
             <h1>Build Your Dream City</h1>
             <section class="images">
-                <img id="climate-image" />
-                <img id="architecture-image" />
-                <img id="attractions-image" />
+                <img id="climate-image" src="./assets/climate-weather.jpg" />
+                <img id="architecture-image" src="./assets/architecture-plans.jpg" />
+                <img id="attractions-image" src="./assets/attractions-bean.jpg" />
             </section>
             <section class="dropdowns">
                 <div class="selections" id="climate">
-                    <!-- <img id="climate-img" src="./assets/climate-weather.jpg" /> -->
                     <select id="climate-dropdown">
                         <option value="weather">Climate</option>
                         <option value="Tropical">Tropical</option>
@@ -79,7 +84,6 @@
                     </div>
                 </div>
             </section>
-            <br />
             <section class="slogan">
                 <input id="slogan-input" />
                 <button id="slogan-button">Add slogan</button>

@@ -21,7 +21,6 @@ let climateCount = 0;
 let architectureCount = 0;
 let attractionsCount = 0;
 let slogans = [];
-// let climateDropdown.value = weather
 
 displaySlogans();
 
@@ -33,10 +32,8 @@ sloganButton.addEventListener('click', () => {
     displaySlogans();
 });
 
-// climateImage.style.backgroundImage = `url(assets/climate-${climateDropdown.value}.jpg)`;
-
 climateDropdown.addEventListener('change', () => {
-    climateImage.src = `assets/climate-${climateDropdown.value}.jpg`;
+    climateImage.src = `./assets/climate-${climateDropdown.value}.jpg`;
     climateCount++;
 
     displayStats();
