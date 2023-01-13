@@ -1,39 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <h1>Web App</h1>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section class="images">
+                <img id="climate-image" />
+                <img id="architecture-image" />
+                <img id="famous-image" />
+            </section>
+            <section id="slogans"></section>
+            <section class="dropdowns">
+                <select id="climate-dropdown">
+                    <option value="">Climate</option>
+                    <option value="Tropical">Tropical</option>
+                    <option value="Dry">Dry</option>
+                    <option value="Temperate">Temperate</option>
+                    <option value="Continental">Continental</option>
+                    <option value="Polar">Polar</option>
+                </select>
+                <div>You changed the climate <span id="climate-count">0</span> times</div>
+                <select id="architecture-dropdown">
+                    <option value="">Architecture</option>
+                    <option value="Modern">Modern</option>
+                    <option value="Victorian">Victorian</option>
+                    <option value="Renaissance">Renaissance</option>
+                    <option value="Gothic">Gothic</option>
+                    <option value="Baroque">Baroque</option>
+                </select>
+                <div>You changed the architecture <span id="architecture-count">0</span> times</div>
+                <select id="famous-dropdown">
+                    <option value="">Famous for</option>
+                    <option value="Burgers">The Burgers</option>
+                    <option value="Coffee">The Coffee</option>
+                    <option value="Pizza">The Pizza</option>
+                    <option value="Skate-parks">The Skate-parks</option>
+                    <option value="Landmarks">The Landmarks</option>
+                </select>
+                <div>
+                    You changed what the city is known for <span id="famous-count">0</span> times
+                </div>
+            </section>
+            <section>
+                <input id="slogan-input" />
+                <button id="slogan-button">Add slogan</button>
+            </section>
+        </main>
+    </body>
 </html>
