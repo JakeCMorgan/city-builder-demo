@@ -32,6 +32,21 @@ sloganButton.addEventListener('click', () => {
     displaySlogans();
 });
 
+climateDropdown.addEventListener('change', () => {
+    climateImage.src = `assets/climate-${climateDropdown.value}.jpg`;
+    climateCount++;
+});
+
+architectureDropdown.addEventListener('change', () => {
+    architectureImage.src = `assets/architecture-${architectureDropdown.value}.jpg`;
+    architectureCount++;
+});
+
+attractionsDropdown.addEventListener('change', () => {
+    attractionsImage.src = `assets/attractions-${attractionsDropdown.value}.jpg`;
+    attractionsCount++;
+});
+
 /* Display Functions */
 
 function displaySlogans() {
