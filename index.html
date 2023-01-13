@@ -1,39 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <h1>Build Your Dream City</h1>
+            <section class="images">
+                <img id="climate-image" src="./assets/climate-weather.jpg" />
+                <img id="architecture-image" src="./assets/architecture-plans.jpg" />
+                <img id="attractions-image" src="./assets/attractions-bean.jpg" />
+            </section>
+            <section class="dropdowns">
+                <div class="selections" id="climate">
+                    <select id="climate-dropdown">
+                        <option value="weather">Climate</option>
+                        <option value="Tropical">Tropical</option>
+                        <option value="Dry">Dry</option>
+                        <option value="Temperate">Temperate</option>
+                        <option value="Continental">Continental</option>
+                        <option value="Arctic">Arctic</option>
+                    </select>
+                    <div class="count">
+                        You changed the climate
+                        <span class="counter" id="climate-count">0</span> times
+                    </div>
+                </div>
+                <div class="selections" id="architecture">
+                    <select id="architecture-dropdown">
+                        <option value="plans">Architecture</option>
+                        <option value="Modern">Modern</option>
+                        <option value="Victorian">Victorian</option>
+                        <option value="Renaissance">Renaissance</option>
+                        <option value="Gothic">Gothic</option>
+                        <option value="Baroque">Baroque</option>
+                    </select>
+                    <div class="count">
+                        You changed the architecture
+                        <span class="counter" id="architecture-count">0</span> times
+                    </div>
+                </div>
+                <div class="selections" id="attractions">
+                    <select id="attractions-dropdown">
+                        <option value="bean">Known for</option>
+                        <option value="Burger">The Burgers</option>
+                        <option value="Coffee">The Coffee</option>
+                        <option value="Pizza">The Pizza</option>
+                        <option value="Skatepark">The Skate-parks</option>
+                        <option value="Landmark">The Landmarks</option>
+                    </select>
+                    <div class="count">
+                        You changed what the city is known for
+                        <span class="counter" id="attractions-count">0</span> times
+                    </div>
+                </div>
+            </section>
+            <section class="slogan">
+                <input id="slogan-input" />
+                <button id="slogan-button">Add slogan</button>
+            </section>
+            <section id="slogans"></section>
+        </main>
+    </body>
 </html>

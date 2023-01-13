@@ -30,6 +30,62 @@ header .logo {
     height: 100%;
 }
 
+/* * {
+    border: 2px solid black;
+} */
+
 main {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/background.jpg);
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdowns {
+    display: flex;
+    flex-direction: row;
+}
+
+.selections {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    padding: 10px;
+}
+
+.slogan {
+}
+
+.images img {
+    width: 300px;
+    padding: 10px;
+}
+
+.selections img {
+    width: 200px;
+}
+
+.count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
 }
