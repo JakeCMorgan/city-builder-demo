@@ -20,7 +20,8 @@ const slogansEl = document.getElementById('slogans');
 let climateCount = 0;
 let architectureCount = 0;
 let attractionsCount = 0;
-let slogans = ['test 1', 'test 2', 'test 3'];
+let slogans = [];
+// let climateDropdown.value = weather
 
 displaySlogans();
 
@@ -32,22 +33,36 @@ sloganButton.addEventListener('click', () => {
     displaySlogans();
 });
 
+// climateImage.style.backgroundImage = `url(assets/climate-${climateDropdown.value}.jpg)`;
+
 climateDropdown.addEventListener('change', () => {
     climateImage.src = `assets/climate-${climateDropdown.value}.jpg`;
     climateCount++;
+
+    displayStats();
 });
 
 architectureDropdown.addEventListener('change', () => {
     architectureImage.src = `assets/architecture-${architectureDropdown.value}.jpg`;
     architectureCount++;
+
+    displayStats();
 });
 
 attractionsDropdown.addEventListener('change', () => {
     attractionsImage.src = `assets/attractions-${attractionsDropdown.value}.jpg`;
     attractionsCount++;
+
+    displayStats();
 });
 
 /* Display Functions */
+
+function displayStats() {
+    climateCountEl.textContent = climateCount;
+    architectureCountEl.textContent = architectureCount;
+    attractionsCountEl.textContent = attractionsCount;
+}
 
 function displaySlogans() {
     slogansEl.textContent = '';

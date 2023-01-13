@@ -25,52 +25,66 @@
     <body>
         <header>
             <img class="logo" src="assets/html_css_js.png" alt="logo" />
-            <h1>Web App</h1>
         </header>
 
         <main>
+            <h1>Build Your Dream City</h1>
             <section class="images">
                 <img id="climate-image" />
                 <img id="architecture-image" />
                 <img id="attractions-image" />
             </section>
-            <section id="slogans"></section>
             <section class="dropdowns">
-                <select id="climate-dropdown">
-                    <option value="">Climate</option>
-                    <option value="Tropical">Tropical</option>
-                    <option value="Dry">Dry</option>
-                    <option value="Temperate">Temperate</option>
-                    <option value="Continental">Continental</option>
-                    <option value="Arctic">Arctic</option>
-                </select>
-                <div>You changed the climate <span id="climate-count">0</span> times</div>
-                <select id="architecture-dropdown">
-                    <option value="">Architecture</option>
-                    <option value="Modern">Modern</option>
-                    <option value="Victorian">Victorian</option>
-                    <option value="Renaissance">Renaissance</option>
-                    <option value="Gothic">Gothic</option>
-                    <option value="Baroque">Baroque</option>
-                </select>
-                <div>You changed the architecture <span id="architecture-count">0</span> times</div>
-                <select id="attractions-dropdown">
-                    <option value="">Known for</option>
-                    <option value="Burger">The Burgers</option>
-                    <option value="Coffee">The Coffee</option>
-                    <option value="Pizza">The Pizza</option>
-                    <option value="Skate-park">The Skate-parks</option>
-                    <option value="Landmark">The Landmarks</option>
-                </select>
-                <div>
-                    You changed what the city is known for
-                    <span id="attractions-count">0</span> times
+                <div class="selections" id="climate">
+                    <!-- <img id="climate-img" src="./assets/climate-weather.jpg" /> -->
+                    <select id="climate-dropdown">
+                        <option value="weather">Climate</option>
+                        <option value="Tropical">Tropical</option>
+                        <option value="Dry">Dry</option>
+                        <option value="Temperate">Temperate</option>
+                        <option value="Continental">Continental</option>
+                        <option value="Arctic">Arctic</option>
+                    </select>
+                    <div class="count">
+                        You changed the climate
+                        <span class="counter" id="climate-count">0</span> times
+                    </div>
+                </div>
+                <div class="selections" id="architecture">
+                    <select id="architecture-dropdown">
+                        <option value="plans">Architecture</option>
+                        <option value="Modern">Modern</option>
+                        <option value="Victorian">Victorian</option>
+                        <option value="Renaissance">Renaissance</option>
+                        <option value="Gothic">Gothic</option>
+                        <option value="Baroque">Baroque</option>
+                    </select>
+                    <div class="count">
+                        You changed the architecture
+                        <span class="counter" id="architecture-count">0</span> times
+                    </div>
+                </div>
+                <div class="selections" id="attractions">
+                    <select id="attractions-dropdown">
+                        <option value="bean">Known for</option>
+                        <option value="Burger">The Burgers</option>
+                        <option value="Coffee">The Coffee</option>
+                        <option value="Pizza">The Pizza</option>
+                        <option value="Skatepark">The Skate-parks</option>
+                        <option value="Landmark">The Landmarks</option>
+                    </select>
+                    <div class="count">
+                        You changed what the city is known for
+                        <span class="counter" id="attractions-count">0</span> times
+                    </div>
                 </div>
             </section>
-            <section>
+            <br />
+            <section class="slogan">
                 <input id="slogan-input" />
                 <button id="slogan-button">Add slogan</button>
             </section>
+            <section id="slogans"></section>
         </main>
     </body>
 </html>

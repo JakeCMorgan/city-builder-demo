@@ -30,10 +30,54 @@ header .logo {
     height: 100%;
 }
 
+/* * {
+    border: 2px solid black;
+} */
+
 main {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdowns {
+    display: flex;
+    flex-direction: row;
+}
+
+.selections {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.slogan {
 }
 
 .images img {
-    width: 250px;
+    width: 200px;
+}
+
+.selections img {
+    width: 200px;
+}
+
+.count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
 }
