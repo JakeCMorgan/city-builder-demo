@@ -22,8 +22,21 @@ let architectureCount = 0;
 let attractionsCount = 0;
 let slogans = ['test 1', 'test 2', 'test 3'];
 
+displaySlogans();
+
 /* Events */
 
 /* Display Functions */
 
+function displaySlogans() {
+    slogansEl.textContent = '';
+
+    for (let slogan of slogans) {
+        const newElement = document.createElement('p');
+        newElement.classList.add('slogan');
+        newElement.textContent = slogan;
+
+        slogansEl.append(newElement);
+    }
+}
 // (don't forget to call any display functions you want to run on page load!)
