@@ -26,6 +26,12 @@ displaySlogans();
 
 /* Events */
 
+sloganButton.addEventListener('click', () => {
+    slogans.push(sloganInputEl.value);
+
+    displaySlogans();
+});
+
 /* Display Functions */
 
 function displaySlogans() {
