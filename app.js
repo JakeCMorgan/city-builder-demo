@@ -17,6 +17,11 @@ const slogansEl = document.getElementById('slogans');
 
 /* State */
 
+let climateCount = 0;
+let architectureCount = 0;
+let attractionsCount = 0;
+let slogans = ['test 1', 'test 2', 'test 3'];
+
 /* Events */
 
 /* Display Functions */
